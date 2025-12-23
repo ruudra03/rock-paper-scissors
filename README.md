@@ -16,11 +16,11 @@ Randomly returns "Rock", "Paper" or "Scissors" for the current round.
 
 ### Player
 
-The player choices "Rock", "Paper" or "Scissors" for the current round.
+The player chooses "Rock", "Paper" or "Scissors" for the current round.
 
 #### Function _getPlayerChoice_
 
-- Use **promt** method to get user's input of 1, 2 or 3.
+- Use **promt** method to get user's input of 1, 2 or 3 for the current round.
 
 ---
 
@@ -28,8 +28,7 @@ The player choices "Rock", "Paper" or "Scissors" for the current round.
 
 #### Variables _computerScore_ and _playerScore_
 
-- Use two varibales to keep track for the computer's and player's scores.
-- Initial scores are 0.
+- Use two varibales to keep track for the computer's and player's scores respectively.
 
 #### Function _playRound_
 
@@ -40,9 +39,10 @@ The player choices "Rock", "Paper" or "Scissors" for the current round.
 2. _"Paper **covers** Rock"_
 3. _"Scissors **cuts** Paper"_
 
-- Return round winner and increment winner's score.
+- Increment winner's score and return round winner.
 
 #### Function _playGame_
 
-- Stimulate multiple rounds, and first one to score 5 points is the winner.
-- End game after the winner is declared.
+- Initialise computer's and player's scores with 0.
+- Stimulate multiple rounds, where first one to score 5 points is the winner.
+- Return game winner.
