@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-**_ 1 Player Rock Paper Scissors Game _**
+_**1 Player Rock-Paper-Scissors Game**_
 
 ---
 
@@ -10,7 +10,7 @@ Randomly returns "Rock", "Paper" or "Scissors" for the current round.
 
 ###### Function _getComputerChoice_
 
-- Use **Math.random** method to return a integer value (where 0 <= integer <= 2).
+- Use **Math.floor** and **Math.random** methods to return a integer value of either 0, 1 or 2.
 
 ---
 

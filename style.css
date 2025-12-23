@@ -35,3 +35,9 @@ img {
   height: auto;
 }
 /* END OF CSS RESETS */
+
+/* BASE STYLES */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* END OF BASE STYLES */
