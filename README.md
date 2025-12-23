@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-## **1 Player Rock-Paper-Scissors Game**
+> **1 Player Rock-Paper-Scissors Game**
 
 ---
 
@@ -20,8 +20,7 @@ The player choices "Rock", "Paper" or "Scissors" for the current round.
 
 #### Function _getPlayerChoice_
 
-- Use **promt** method to get user's imput.
-- Handle reprompting until a valid choice is entered.
+- Use **promt** method to get user's input of 1, 2 or 3.
 
 ---
 

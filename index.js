@@ -42,5 +42,65 @@ function getPlayerChoice() {
   return playerChoice;
 }
 
-console.log(getComputerChoice());
-console.log(getPlayerChoice());
+// GAME
+
+// Game scores
+let computerScore;
+let playerScore;
+
+// Stimute one round of the game
+function playRound(computerChoice, playerChoice) {
+  // Determine round result
+  let result;
+
+  if (computerChoice === playerChoice) {
+    result = "Draw!";
+  } // Player is the loser
+  else if (
+    (computerChoice === "Rock" && playerChoice === "Scissors") ||
+    (computerChoice === "Paper" && playerChoice === "Rock") ||
+    (computerChoice === "Scissors" && playerChoice === "Paper")
+  ) {
+    // Increment computer's score
+    computerScore++;
+    result = `You lose! ${computerChoice} beats ${playerChoice}.`;
+  } // Player is the winner
+  else {
+    // Increment player's score
+    playerScore++;
+    result = `You win! ${playerChoice} beats ${computerChoice}.`;
+  }
+
+  return roundResult;
+}
+
+// Stimulate the game where first one to win 5 rounds is the winner
+function playGame() {
+  // Maximum score needed to win the game
+  const maxScore = 5;
+
+  // Initialise scores
+  computerScore = 0;
+  playerScore = 0;
+
+  // Loop until the winner is decided
+  let gameWinner;
+
+  while (computerScore < maxScore && playerScore < maxScore) {
+    // Play a round
+    let roundResult = playRound(getComputerChoice(), getPlayerChoice());
+    console.log(roundResult);
+
+    // Determine winner
+    if (computerScore === maxScore) {
+      gameWinner = "Computer";
+    } else if (playerScore === maxScore) {
+      gameWinner = "Player";
+    }
+  }
+
+  return gameWinner;
+}
+
+let game = playGame();
+console.log(game);
