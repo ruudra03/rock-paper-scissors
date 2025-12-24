@@ -55,9 +55,10 @@ body {
 }
 
 .startGame #startBtn {
-  border: 2px solid black;
-  font-weight: 600;
+  border: 1px solid black;
   font-size: 1.5rem;
+  border-radius: 1.5rem;
+  padding: 0 1rem;
 }
 
 .game {
@@ -89,7 +90,7 @@ body {
 #computerScore,
 #playerScore {
   font-size: 4.5rem;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .scoreboard .currentRound {

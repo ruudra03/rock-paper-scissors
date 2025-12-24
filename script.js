@@ -1,3 +1,41 @@
+// DOM selectors for start game and main game sections
+const startGameSection = document.querySelector(".startGame");
+const gameSection = document.querySelector(".game");
+
+// Get score counters and current round counter elements in DOM
+const computerScoreDisplay = document.querySelector("#computerScore");
+const playerScoreDisplay = document.querySelector("#playerScore");
+const roundCounterDisplay = document.querySelector("#roundCounter");
+
+// Start game event listener
+const startGameBtn = startGameSection.firstElementChild;
+startGameBtn.addEventListener("click", () => {
+  // Hide start game section
+  startGameSection.style.visibility = "hidden";
+
+  // Begin the game
+  startGame();
+});
+
+// Start Game function
+function startGame() {
+  // Unhide game section
+  gameSection.style.visibility = "visible";
+
+  // Initialise game scores at 0 and start with round 1 using updateScoreboard helper function
+  let computerScore = 0;
+  let playerScore = 0;
+  let roundCounter = 1;
+  updateScoreboard(computerScore, playerScore, roundCounter);
+}
+
+// Update game display's scorebaord
+function updateScoreboard(computerScore, playerScore, roundCounter) {
+  computerScoreDisplay.textContent = computerScore;
+  playerScoreDisplay.textContent = playerScore;
+  roundCounterDisplay.textContent = roundCounter;
+}
+
 // COMPUTER
 
 function getComputerChoice() {
@@ -44,10 +82,6 @@ function getPlayerChoice() {
 }
 
 // GAME
-
-// Game scores
-let computerScore = 0;
-let playerScore = 0;
 
 // Stimute one round of the game
 function playRound(computerChoice, playerChoice) {
