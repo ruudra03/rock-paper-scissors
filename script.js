@@ -25,7 +25,7 @@ function startGame() {
   // Initialise game scores at 0 and start with round 1 using updateScoreboard helper function
   let computerScore = 0;
   let playerScore = 0;
-  let roundCounter = 1;
+  let roundCounter = 0;
   updateScoreboard(computerScore, playerScore, roundCounter);
 }
 

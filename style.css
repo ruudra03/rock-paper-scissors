@@ -39,6 +39,7 @@ img {
 /* BASE STYLES */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: wheat;
 }
 /* END OF BASE STYLES */
 
@@ -77,7 +78,7 @@ body {
 
 .display .scoreboard {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -91,6 +92,7 @@ body {
 #playerScore {
   font-size: 4.5rem;
   font-weight: 600;
+  border-bottom: 3px solid black;
 }
 
 .scoreboard .currentRound {
@@ -101,11 +103,13 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .currentRoundSelection .roundChoice {
-  width: 24rem;
-  height: 24rem;
+  width: 18rem;
+  height: 18rem;
+  margin-top: 3rem;
 }
 
 .currentRoundSelection span {
@@ -114,10 +118,11 @@ body {
 }
 
 .display #resultsDisplay {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
-  flex: 1;
-  padding: 1.5rem 0 0 0;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  font-style: italic;
 }
 
 .game .playerInputBtns {
@@ -127,6 +132,7 @@ body {
 
 .playerInputBtns button {
   border: none;
+  background-color: wheat;
 }
 
 .playerInputBtns img {
