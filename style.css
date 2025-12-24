@@ -41,3 +41,26 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /* END OF BASE STYLES */
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+}
+
+.playerInputBtns {
+  display: flex;
+  flex-direction: column;
+}
+
+.playerInputBtns button {
+  border: none;
+}
+
+.playerInputBtns img {
+  width: 200px;
+}

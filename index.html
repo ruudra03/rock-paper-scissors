@@ -5,10 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </head>
 
   <body>
-    <h1>1 Player Rock-Paper-Scissors Game</h1>
+    <div class="header">Rock-Paper-Scissors Game</div>
+
+    <div class="game">
+      <div class="display">
+        <div id="scoreboard">0 vs 0</div>
+        <div id="currentRound">Current Round</div>
+      </div>
+
+      <div class="playerInputBtns">
+        <button id="rockBtn">
+          <img
+            src="images/hand-rock-img.png"
+            alt="Image of a hand signaling rock."
+          />
+        </button>
+        <button id="paperBtn">
+          <img
+            src="images/hand-paper-img.png"
+            alt="Image of a hand signaling paper."
+          />
+        </button>
+        <button id="scissorsBtn">
+          <img
+            src="images/hand-scissors-img.png"
+            alt="Image of a hand signaling scissors."
+          />
+        </button>
+      </div>
+    </div>
   </body>
 </html>

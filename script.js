@@ -2,7 +2,8 @@
 
 function getComputerChoice() {
   // Get a random integer value between 0, 1 and 2 corresponding to "Rock", "Paper" and "Scissors" respectively
-  let randomInt = Math.floor(Math.random() * 3);
+  let numOfChoices = 3; // Total possible choices in the game
+  let randomInt = Math.floor(Math.random() * numOfChoices);
 
   // Determine computer's choice
   let computerChoice;
@@ -45,8 +46,8 @@ function getPlayerChoice() {
 // GAME
 
 // Game scores
-let computerScore;
-let playerScore;
+let computerScore = 0;
+let playerScore = 0;
 
 // Stimute one round of the game
 function playRound(computerChoice, playerChoice) {
@@ -73,34 +74,3 @@ function playRound(computerChoice, playerChoice) {
 
   return roundResult;
 }
-
-// Stimulate the game where first one to win 5 rounds is the winner
-function playGame() {
-  // Maximum score needed to win the game
-  const maxScore = 5;
-
-  // Initialise scores
-  computerScore = 0;
-  playerScore = 0;
-
-  // Loop until the winner is decided
-  let gameWinner;
-
-  while (computerScore < maxScore && playerScore < maxScore) {
-    // Play a round
-    let roundResult = playRound(getComputerChoice(), getPlayerChoice());
-    console.log(roundResult);
-
-    // Determine winner
-    if (computerScore === maxScore) {
-      gameWinner = "Computer";
-    } else if (playerScore === maxScore) {
-      gameWinner = "Player";
-    }
-  }
-
-  return gameWinner;
-}
-
-let game = playGame();
-console.log(game);

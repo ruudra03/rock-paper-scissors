@@ -11,16 +11,17 @@ Randomly returns "Rock", "Paper" or "Scissors" for the current round.
 #### Function _getComputerChoice_
 
 - Use **Math.floor** and **Math.random** methods to return a integer value of either 0, 1 or 2.
+- Display choice on the screen.
 
 ---
 
 ### Player
 
-The player chooses "Rock", "Paper" or "Scissors" for the current round.
+The player chooses "Rock", "Paper" or "Scissors" for the current round using buttons.
 
 #### Function _getPlayerChoice_
 
-- Use **promt** method to get user's input of 1, 2 or 3 for the current round.
+- Use event listeners to get user's input of "Rock", "Paper" or "Scissors" for the current round.
 
 ---
 
@@ -29,6 +30,7 @@ The player chooses "Rock", "Paper" or "Scissors" for the current round.
 #### Variables _computerScore_ and _playerScore_
 
 - Use two varibales to keep track for the computer's and player's scores respectively.
+- Display running scores on the screen.
 
 #### Function _playRound_
 
@@ -40,9 +42,10 @@ The player chooses "Rock", "Paper" or "Scissors" for the current round.
 3. _"Scissors **cuts** Paper"_
 
 - Increment winner's score and return round winner.
+- Display round result on the screen.
 
 #### Function _playGame_
 
 - Initialise computer's and player's scores with 0.
 - Stimulate multiple rounds, where first one to score 5 points is the winner.
-- Return game winner.
+- Announce the game winner on the screen.
