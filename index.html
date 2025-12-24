@@ -11,12 +11,39 @@
   <body>
     <div class="header">Rock-Paper-Scissors Game</div>
 
+    <div class="startGame"><button id="startBtn">Start</button></div>
+
     <div class="game">
+      <!-- GAME DISPLAY -->
       <div class="display">
-        <div id="scoreboard">0 vs 0</div>
-        <div id="currentRound">Current Round</div>
+        <!-- SCOREBAORD -->
+        <div class="scoreboard">
+          <div class="scoreCounter">
+            <span>Computer</span>
+            <div id="computerScore"></div>
+          </div>
+
+          <!-- CURRENT ROUND COUNTER -->
+          <div class="currentRound">Round <span id="roundCounter"></span></div>
+
+          <div class="scoreCounter">
+            <span>Player</span>
+            <div id="playerScore"></div>
+          </div>
+        </div>
+
+        <!-- CURRENT COMPUTER'S AND PLAYER'S SELECTION -->
+        <div class="currentRoundSelection">
+          <div class="roundChoice" id="computerChoiceDisplay"></div>
+          <span>VS</span>
+          <div class="roundChoice" id="playerChoiceDisplay"></div>
+        </div>
+
+        <!-- RESULT SCREEN -->
+        <div id="resultsDisplay"></div>
       </div>
 
+      <!-- GAME PLAYER INPUTS -->
       <div class="playerInputBtns">
         <button id="rockBtn">
           <img
